@@ -18,18 +18,32 @@ final class QueueTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testEnqueueAraay() {
-        XCTAssertTrue(makeSUT().peek == "A")
+    func testEnqueueArray() {
+        XCTAssertTrue(makeSUTQueueArray().peek == "A")
     }
+    
     func testDequeueArray() throws {
-        var sut = makeSUT()
+        var sut = makeSUTQueueArray()
         sut.dequeue()//dequeue A
         sut.dequeue()//dequeue B
         XCTAssertTrue(sut.peek == "C")// Peek element is "C"
-        sut.dequeue()//dequeue B
+        sut.dequeue()//dequeue C
         XCTAssertTrue(sut.isEmpty)
     }
-
+    //MARK: - Stack
+    func testEnqueueStack() {
+        XCTAssertTrue(makeQueueStackSUT().peek == "A")
+    }
+    
+    func testDequeueStack() throws {
+        var sut = makeQueueStackSUT()
+        sut.dequeue()//dequeue A
+        sut.dequeue()//dequeue B
+        XCTAssertTrue(sut.peek == "C")// Peek element is "C"
+        sut.dequeue()//dequeue C
+        XCTAssertTrue(sut.isEmpty)
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
@@ -38,8 +52,16 @@ final class QueueTests: XCTestCase {
     }
     //MARK: - Helpers
     
-    func makeSUT() -> QueueArray<String> {
+    func makeSUTQueueArray() -> QueueArray<String> {
         var stack = QueueArray<String>()
+        stack.enqueue("A")
+        stack.enqueue("B")
+        stack.enqueue("C")
+        return stack
+    }
+    
+    func makeQueueStackSUT() -> QueueStack<String> {
+        var stack = QueueStack<String>()
         stack.enqueue("A")
         stack.enqueue("B")
         stack.enqueue("C")

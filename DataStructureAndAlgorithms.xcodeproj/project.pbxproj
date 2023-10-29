@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4DF2C622AEE2D96008B2EA9 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF2C612AEE2D96008B2EA9 /* QueueStack.swift */; };
 		C4E3A4CA2AEA2B1400175230 /* DataStructureAndAlgorithms.docc in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4C92AEA2B1400175230 /* DataStructureAndAlgorithms.docc */; };
 		C4E3A4D02AEA2B1500175230 /* DataStructureAndAlgorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E3A4C52AEA2B1400175230 /* DataStructureAndAlgorithms.framework */; };
 		C4E3A4D52AEA2B1500175230 /* DataStructureAndAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4D42AEA2B1500175230 /* DataStructureAndAlgorithmsTests.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4DF2C612AEE2D96008B2EA9 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
 		C4E3A4C52AEA2B1400175230 /* DataStructureAndAlgorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructureAndAlgorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E3A4C82AEA2B1400175230 /* DataStructureAndAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructureAndAlgorithms.h; sourceTree = "<group>"; };
 		C4E3A4C92AEA2B1400175230 /* DataStructureAndAlgorithms.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataStructureAndAlgorithms.docc; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				C4E3A4C92AEA2B1400175230 /* DataStructureAndAlgorithms.docc */,
 				C4E3A4DF2AEA2B4B00175230 /* Stack.swift */,
 				C4EA94182AEE13700093D775 /* Queue.swift */,
+				C4DF2C612AEE2D96008B2EA9 /* QueueStack.swift */,
 			);
 			path = DataStructureAndAlgorithms;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				C4E3A4E02AEA2B4B00175230 /* Stack.swift in Sources */,
 				C4EA94192AEE13700093D775 /* Queue.swift in Sources */,
+				C4DF2C622AEE2D96008B2EA9 /* QueueStack.swift in Sources */,
 				C4E3A4CA2AEA2B1400175230 /* DataStructureAndAlgorithms.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
