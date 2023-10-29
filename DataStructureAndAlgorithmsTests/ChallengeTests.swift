@@ -18,7 +18,7 @@ func checkParentheses(_ string: String) -> Bool {
             if stack.isEmpty {
                 return false
             } else {
-               let _ = stack.pop()
+               stack.pop()
             }
         }
     }

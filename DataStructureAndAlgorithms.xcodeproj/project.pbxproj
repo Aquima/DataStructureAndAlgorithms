@@ -14,6 +14,8 @@
 		C4E3A4E02AEA2B4B00175230 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4DF2AEA2B4B00175230 /* Stack.swift */; };
 		C4E3A4E22AEAB9B300175230 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4E12AEAB9B300175230 /* StackTests.swift */; };
 		C4E3A4E42AEAD65700175230 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4E32AEAD65700175230 /* ChallengeTests.swift */; };
+		C4EA94192AEE13700093D775 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA94182AEE13700093D775 /* Queue.swift */; };
+		C4EA941B2AEE1DD70093D775 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA941A2AEE1DD70093D775 /* QueueTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		C4E3A4DF2AEA2B4B00175230 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		C4E3A4E12AEAB9B300175230 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		C4E3A4E32AEAD65700175230 /* ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTests.swift; sourceTree = "<group>"; };
+		C4EA94182AEE13700093D775 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		C4EA941A2AEE1DD70093D775 /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				C4E3A4C82AEA2B1400175230 /* DataStructureAndAlgorithms.h */,
 				C4E3A4C92AEA2B1400175230 /* DataStructureAndAlgorithms.docc */,
 				C4E3A4DF2AEA2B4B00175230 /* Stack.swift */,
+				C4EA94182AEE13700093D775 /* Queue.swift */,
 			);
 			path = DataStructureAndAlgorithms;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 				C4E3A4D42AEA2B1500175230 /* DataStructureAndAlgorithmsTests.swift */,
 				C4E3A4E12AEAB9B300175230 /* StackTests.swift */,
 				C4E3A4E32AEAD65700175230 /* ChallengeTests.swift */,
+				C4EA941A2AEE1DD70093D775 /* QueueTests.swift */,
 			);
 			path = DataStructureAndAlgorithmsTests;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E3A4E02AEA2B4B00175230 /* Stack.swift in Sources */,
+				C4EA94192AEE13700093D775 /* Queue.swift in Sources */,
 				C4E3A4CA2AEA2B1400175230 /* DataStructureAndAlgorithms.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 				C4E3A4E22AEAB9B300175230 /* StackTests.swift in Sources */,
 				C4E3A4D52AEA2B1500175230 /* DataStructureAndAlgorithmsTests.swift in Sources */,
 				C4E3A4E42AEAD65700175230 /* ChallengeTests.swift in Sources */,
+				C4EA941B2AEE1DD70093D775 /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

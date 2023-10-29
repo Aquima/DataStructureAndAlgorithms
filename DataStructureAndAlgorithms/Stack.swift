@@ -21,6 +21,7 @@ struct Stack<Element: Equatable> : Equatable {
         storage.append(element)
     }
 
+    @discardableResult
     mutating func pop() -> Element? {
         storage.popLast()
     }
