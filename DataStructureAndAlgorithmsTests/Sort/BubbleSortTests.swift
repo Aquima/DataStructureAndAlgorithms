@@ -9,31 +9,27 @@ import XCTest
 @testable import DataStructureAndAlgorithms
 
 final class BubbleSortTests: XCTestCase {
-
-
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testSort() throws {
+        var sut = sut()
+        let bubbleSort = BubbleSort()
+        XCTAssertTrue(bubbleSort.sort(&sut) == [ 1, 2, 4, 5, 6, 9])
     }
-
+    
+    func testMajorThanTwo() throws {
+        let sut = sut()
+        XCTAssertTrue(sut.count > 1)
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    func testMajorThanTwo() throws {
-        let sut = sut()
-        let bubleSort = BubbleSort()
-    }
     // MARK: HELPERS
     func sut() -> [Int] {
-        return [4, 2, 5, 6]
+        return [4, 2, 5, 6, 1, 9]
     }
 
 }
