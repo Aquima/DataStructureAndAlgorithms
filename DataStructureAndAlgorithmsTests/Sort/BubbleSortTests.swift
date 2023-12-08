@@ -13,7 +13,8 @@ final class BubbleSortTests: XCTestCase {
     func testSort() throws {
         var sut = sut()
         let bubbleSort = BubbleSort()
-        XCTAssertTrue(bubbleSort.sort(&sut) == [ 1, 2, 4, 5, 6, 9])
+        bubbleSort.sort(&sut)
+        XCTAssertTrue( sut == [ 1, 2, 4, 5, 6, 9])
     }
     
     func testMajorThanTwo() throws {

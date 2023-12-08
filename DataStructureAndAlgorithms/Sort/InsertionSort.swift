@@ -16,7 +16,6 @@ struct InsertionSort {
     /// to the sorted portion of the list.
     ///
     /// - Parameter array: The collection it has more than two elements.
-    /// - Returns: The new sorted array
     ///
     /// - Complexity: O(n^2) where *n* is the length of the sequence.
     func sort(_ array: inout [Int]) {

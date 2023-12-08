@@ -20,9 +20,9 @@ struct BubbleSort {
     /// - Returns: The new sorted array
     ///
     /// - Complexity: O(n^2) where *n* is the length of the sequence.
-    func sort(_ array: inout [Int]) -> [Int] {
+    func sort(_ array: inout [Int]) {
         guard array.count >= 2 else {
-            return array
+            return
         }
         let allValues = array.count
         for end in (0..<allValues).reversed() {
@@ -36,9 +36,8 @@ struct BubbleSort {
             }
             //if no values were swapped this pass, the collection must be sorted, and you can exit early.
             if !swapped {
-                return array
+                return
             }
           }
-        return array
     }
 }
