@@ -9,7 +9,7 @@ import Foundation
 
 struct BubbleSort {
 
-    /// Removes and returns the last element of the collection.
+    /// Sort the elements
     ///
     /// In Bubble Sort algorithm,
     /// traverse from left and compare adjacent elements and the higher one is placed at right side.
@@ -25,13 +25,12 @@ struct BubbleSort {
             return array
         }
         let allValues = array.count
-        let length = allValues - 1
         for end in (0..<allValues).reversed() {
             var swapped = false
             //This loop performs a single pass; it compares adjacent values and swaps them if needed.
-            for currentIndex in 0..<end {
-              if array[currentIndex] > array[currentIndex+1] {
-                  array.swapAt(currentIndex, currentIndex + 1)
+            for current in 0..<end {
+              if array[current] > array[current+1] {
+                  array.swapAt(current, current + 1)
                   swapped = true
               }
             }
